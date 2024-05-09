@@ -1,0 +1,30 @@
+import ListGroup from "./components/ListGroup";
+import Card from "./components/Card";
+import Navbar from "./components/Navbar";
+import Table from "./components/Table";
+import Carousel from "./components/Carousel";
+import Accordion from "./components/Accordion";
+import Modal from "./components/Modal";
+import Footer from "./components/Footer";
+import Video from "./components/Video";
+
+function App() {
+  return (
+    <>
+      <Navbar />
+      <div className="p-3 m-0">
+        <Carousel />
+        <Accordion />
+        <Card />
+        <ListGroup />
+        <Video />
+
+        <Table />
+        <Modal />
+      </div>
+      <Footer />
+    </>
+  );
+}
+
+export default App;
