@@ -1,5 +1,5 @@
 function Video() {
-  const videoUrl = "https://www.youtube.com";
+  const videoUrl = "";
 
   return (
     <>

@@ -12,8 +12,8 @@ function App() {
   return (
     <>
       <Navbar />
+      <Carousel />
       <div className="p-3 m-0">
-        <Carousel />
         <Accordion />
         <Card />
         <ListGroup />

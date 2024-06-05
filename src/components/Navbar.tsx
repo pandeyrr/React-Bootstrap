@@ -1,10 +1,10 @@
 function Navbar() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+      <nav className="navbar navbar-expand-lg bg-dark p-4" data-bs-theme="dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Navbar
+            Earthly Escapades
           </a>
           <button
             className="navbar-toggler"
@@ -21,12 +21,12 @@ function Navbar() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
-                  Home
+                  About
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Link
+                  Blog
                 </a>
               </li>
               <li className="nav-item dropdown">
@@ -37,17 +37,17 @@ function Navbar() {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  Dropdown
+                  Explore
                 </a>
                 <ul className="dropdown-menu">
                   <li>
                     <a className="dropdown-item" href="#">
-                      Action
+                      Link
                     </a>
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Another action
+                      Another Link
                     </a>
                   </li>
                   <li>
@@ -55,17 +55,13 @@ function Navbar() {
                   </li>
                   <li>
                     <a className="dropdown-item" href="#">
-                      Something else here
+                      Link
                     </a>
                   </li>
                 </ul>
               </li>
-              <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">
-                  Disabled
-                </a>
-              </li>
             </ul>
+
             <form className="d-flex" role="search">
               <input
                 className="form-control me-2"

@@ -1,4 +1,19 @@
-function Carousel() {
+const Carousel = () => {
+  const imgHeight = "600px";
+  const images = [
+    {
+      src: "https://images.unsplash.com/photo-1567062691477-fcbc8bbdf5b1?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "First slide",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1501785888041-af3ef285b470?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Second slide",
+    },
+    {
+      src: "https://images.unsplash.com/photo-1505832018823-50331d70d237?q=80&w=3008&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      alt: "Third slide",
+    },
+  ];
   return (
     <>
       <div
@@ -6,61 +21,25 @@ function Carousel() {
         className="carousel slide"
         data-bs-ride="carousel"
       >
-        <div className="carousel-inner">
-          <div className="carousel-item active" data-bs-interval="2000">
-            <svg
-              className="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: First slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
+        <div
+          className="carousel-inner "
+          style={{
+            height: imgHeight,
+          }}
+        >
+          {images.map((image, index) => (
+            <div
+              key={index}
+              className={`carousel-item ${index === 0 ? "active" : ""}`}
+              data-bs-interval={index === 0 ? 4000 : 2000}
             >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#e0cb87"></rect>
-              <text x="50%" y="50%" fill="#555" dy=".3em">
-                First slide
-              </text>
-            </svg>
-          </div>
-          <div className="carousel-item" data-bs-interval="2000">
-            <svg
-              className="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: Second slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#87e0dc"></rect>
-              <text x="50%" y="50%" fill="#444" dy=".3em">
-                Second slide
-              </text>
-            </svg>
-          </div>
-          <div className="carousel-item" data-bs-interval="500">
-            <svg
-              className="bd-placeholder-img bd-placeholder-img-lg d-block w-100"
-              width="800"
-              height="400"
-              xmlns="http://www.w3.org/2000/svg"
-              role="img"
-              aria-label="Placeholder: Third slide"
-              preserveAspectRatio="xMidYMid slice"
-              focusable="false"
-            >
-              <title>Placeholder</title>
-              <rect width="100%" height="100%" fill="#e087dc"></rect>
-              <text x="50%" y="50%" fill="#333" dy=".3em">
-                Third slide
-              </text>
-            </svg>
-          </div>
+              <img
+                src={image.src}
+                alt={image.alt}
+                className="d-block w-100 object-fit-contain"
+              />
+            </div>
+          ))}
         </div>
         <button
           className="carousel-control-prev"
@@ -89,6 +68,6 @@ function Carousel() {
       </div>
     </>
   );
-}
+};
 
 export default Carousel;
