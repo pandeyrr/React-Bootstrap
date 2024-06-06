@@ -13,9 +13,9 @@ function App() {
     <>
       <Navbar />
       <Carousel />
-      <div className="p-3 m-0">
-        <Accordion />
+      <div className="p-5">
         <Card />
+        <Accordion />
         <ListGroup />
         <Video />
 
