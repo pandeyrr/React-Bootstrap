@@ -1,5 +1,6 @@
 const Carousel = () => {
-  const imgHeight = "600px";
+  // const imgHeightDesktop = "600px";
+  // const imgHeightMobile = "300px";
   const images = [
     {
       src: "https://images.unsplash.com/photo-1567062691477-fcbc8bbdf5b1?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
@@ -21,12 +22,7 @@ const Carousel = () => {
         className="carousel slide"
         data-bs-ride="carousel"
       >
-        <div
-          className="carousel-inner "
-          style={{
-            height: imgHeight,
-          }}
-        >
+        <div className="carousel-inner ">
           {images.map((image, index) => (
             <div
               key={index}
@@ -36,7 +32,7 @@ const Carousel = () => {
               <img
                 src={image.src}
                 alt={image.alt}
-                className="d-block w-100 object-fit-contain"
+                className="d-block w-100 carousel-img"
               />
             </div>
           ))}

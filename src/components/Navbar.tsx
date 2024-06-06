@@ -4,7 +4,7 @@ function Navbar() {
       <nav className="navbar navbar-expand-lg bg-dark p-4" data-bs-theme="dark">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Earthly Escapades
+            Brand
           </a>
           <button
             className="navbar-toggler"

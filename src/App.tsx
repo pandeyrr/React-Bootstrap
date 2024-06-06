@@ -7,14 +7,58 @@ import Accordion from "./components/Accordion";
 import Modal from "./components/Modal";
 import Footer from "./components/Footer";
 import Video from "./components/Video";
+import Counter from "./components/Counter";
+import Button from "./components/Button";
+import TodoList from "./components/TodoList";
 
 function App() {
+  const handleClick = () => {
+    alert("Button clicked!");
+  };
   return (
     <>
       <Navbar />
       <Carousel />
       <div className="p-5">
         <Card />
+        <TodoList />
+
+        <h1 className="pt-4">Button</h1>
+        <Button
+          label="Primary Button"
+          onClick={handleClick}
+          variant="primary"
+        />
+        <Button
+          label="Secondary Button"
+          onClick={handleClick}
+          variant="secondary"
+          className="m-2"
+        />
+        <Button
+          label="Large Button"
+          onClick={handleClick}
+          variant="success"
+          size="lg"
+          className="m-2"
+        />
+        <Button
+          label="Small Button"
+          onClick={handleClick}
+          variant="danger"
+          size="sm"
+          className="m-2"
+        />
+        <Button
+          label="Disabled Button"
+          onClick={handleClick}
+          variant="warning"
+          disabled
+          className="m-2"
+        />
+
+        <Counter />
+
         <Accordion />
         <ListGroup />
         <Video />

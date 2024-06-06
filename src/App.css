@@ -1,0 +1,12 @@
+/* Default height for desktop */
+.carousel-img {
+  height: 500px;
+  object-fit: cover;
+}
+
+/* Height for mobile screens */
+@media (max-width: 576px) {
+  .carousel-img {
+    height: 300px;
+  }
+}

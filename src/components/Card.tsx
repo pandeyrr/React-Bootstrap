@@ -12,7 +12,7 @@ const Card = () => {
       title: "Card Title 2",
       content: "Card 2 content goes here",
       image:
-        "https://plus.unsplash.com/premium_photo-1664361480872-6416aab14696?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHRyYXZlbHxlbnwwfHwwfHx8MA%3D%3D",
+        "https://images.unsplash.com/photo-1583855282680-6dbdc69b0932?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzR8fHRyYXZlbHxlbnwwfDF8MHx8fDI%3D",
     },
     {
       id: 3,
@@ -45,8 +45,8 @@ const Card = () => {
   ];
   return (
     <>
-      <h1 className=" pb-5">Featured places</h1>
-      <div className="row row-cols-1 row-cols-md-3 g-4">
+      <h1 className=" pb-5">Cards</h1>
+      <div className="row row-cols-2 row-cols-md-6 g-4">
         {cardData.map((item) => (
           <div className="col" key={item.id}>
             <div className="card">
