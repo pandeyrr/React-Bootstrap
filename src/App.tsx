@@ -10,7 +10,8 @@ import Footer from "./components/Footer";
 import Counter from "./components/Counter";
 import Button from "./components/Button";
 import TodoList from "./components/TodoList";
-import ToggleSwitch from "./components/ToggleSwitch";
+import RadioButton from "./components/RadioButton";
+import Checkbox from "./components/Checkbox";
 
 function App() {
   const handleClick = () => {
@@ -25,7 +26,9 @@ function App() {
 
         <TodoList />
         <hr />
-        <ToggleSwitch />
+        <Checkbox />
+        <hr />
+        <RadioButton />
         <hr />
 
         <h2 className="py-4">Button</h2>
