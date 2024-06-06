@@ -10,6 +10,7 @@ import Video from "./components/Video";
 import Counter from "./components/Counter";
 import Button from "./components/Button";
 import TodoList from "./components/TodoList";
+import ToggleSwitch from "./components/ToggleSwitch";
 
 function App() {
   const handleClick = () => {
@@ -21,7 +22,11 @@ function App() {
       <Carousel />
       <div className="p-5">
         <Card />
+
         <TodoList />
+        <hr />
+        <ToggleSwitch />
+        <hr />
 
         <h1 className="pt-4">Button</h1>
         <Button
@@ -56,14 +61,19 @@ function App() {
           disabled
           className="m-2"
         />
+        <hr />
 
         <Counter />
+        <hr />
 
         <Accordion />
+        <hr />
         <ListGroup />
-        <Video />
+        <hr />
+        {/* <Video /> */}
 
         <Table />
+        <hr />
         <Modal />
       </div>
       <Footer />

@@ -21,7 +21,7 @@ const TodoList = () => {
 
   return (
     <>
-      <h1 className=" pb-5">TodoList</h1>
+      <h1 className=" py-4">TodoList</h1>
 
       <input
         className="form-control-lg me-2"
