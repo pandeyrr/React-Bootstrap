@@ -40,7 +40,9 @@ const TodoList = () => {
       </button>
       {/* remove all todos if more than one */}
       {todos.length > 1 && (
-        <button onClick={removeAllTodos}> Remove All Todos</button>
+        <button className="btn btn-danger btn-lg" onClick={removeAllTodos}>
+          Remove All Todos
+        </button>
       )}
       <ul>
         {todos.map((todo, index) => (
