@@ -5,7 +5,7 @@ function ListGroup() {
     <>
       <div className="row">
         <div className="col">
-          <h1>List Group</h1>
+          <h2 className="py-4">List Group</h2>
           <ul className="list-group">
             {items.map((item, index) => (
               <li

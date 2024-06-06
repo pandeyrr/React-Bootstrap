@@ -45,7 +45,7 @@ const Card = () => {
   ];
   return (
     <>
-      <h1 className=" pb-5">Cards</h1>
+      <h1 className=" py-4">Cards</h1>
       <div className="row row-cols-2 row-cols-md-6 g-4">
         {cardData.map((item) => (
           <div className="col" key={item.id}>

@@ -18,7 +18,7 @@ const Accordion = () => {
   ];
   return (
     <>
-      <h1>Accordion</h1>
+      <h2 className="py-4">Accordion</h2>
       <div className="accordion" id="accordionExample">
         {accordionData.map((item, index) => (
           <div className="accordion-item" key={item.id}>

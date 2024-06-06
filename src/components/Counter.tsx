@@ -5,9 +5,9 @@ const Counter = () => {
   const [count, setCount] = useState(0);
 
   return (
-    <div className="pt-4 pb-4">
+    <div className="py-4">
       {/* show the counter */}
-      <h1>Counter: {count}</h1>
+      <h2 className="py-4">Counter: {count}</h2>
       {/* counter increment */}
       <button
         className="btn btn-success m-2"

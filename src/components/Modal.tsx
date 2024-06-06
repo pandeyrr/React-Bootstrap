@@ -1,7 +1,7 @@
 function Modal() {
   return (
     <>
-      <h1>Modal</h1>
+      <h2 className="py-4">Modal</h2>
       {/* Button trigger modal */}
       <button
         type="button"

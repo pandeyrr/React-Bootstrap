@@ -6,7 +6,7 @@ import Carousel from "./components/Carousel";
 import Accordion from "./components/Accordion";
 import Modal from "./components/Modal";
 import Footer from "./components/Footer";
-import Video from "./components/Video";
+// import Video from "./components/Video";
 import Counter from "./components/Counter";
 import Button from "./components/Button";
 import TodoList from "./components/TodoList";
@@ -20,7 +20,7 @@ function App() {
     <>
       <Navbar />
       <Carousel />
-      <div className="p-5">
+      <div className="mx-5">
         <Card />
 
         <TodoList />
@@ -28,7 +28,7 @@ function App() {
         <ToggleSwitch />
         <hr />
 
-        <h1 className="pt-4">Button</h1>
+        <h2 className="py-4">Button</h2>
         <Button
           label="Primary Button"
           onClick={handleClick}

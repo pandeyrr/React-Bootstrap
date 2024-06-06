@@ -1,7 +1,7 @@
 function Table() {
   return (
     <>
-      <h1>Table</h1>
+      <h2 className="py-4"> Table</h2>
       <table className="table">
         <thead>
           <tr>

@@ -1,19 +1,20 @@
 import { useState } from "react";
 
 const ToggleSwitch = () => {
-  const [isOn, setIsOn] = useState(false);
+  const [isChecked, setisChecked] = useState(false);
 
   return (
     <>
-      <h1>Checkbox</h1>
+      <h2 className="py-4">Checkbox</h2>
       <label>
         <input
           className="form-check-input"
           type="checkbox"
-          checked={isOn}
-          onChange={() => setIsOn(!isOn)}
+          checked={isChecked}
+          onChange={() => setisChecked(!isChecked)}
+          id="flexCheckDefault"
         />
-        {isOn ? " Checked" : " Unckecked"}
+        {isChecked ? " Checked" : " Unckecked"}
       </label>
     </>
   );
