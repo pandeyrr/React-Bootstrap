@@ -1,85 +1,27 @@
-import ListGroup from "./components/ListGroup";
-import Card from "./components/Card";
-import Navbar from "./components/Navbar";
-import Table from "./components/Table";
-import Carousel from "./components/Carousel";
-import Accordion from "./components/Accordion";
-import Modal from "./components/Modal";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer";
-// import Video from "./components/Video";
-import Counter from "./components/Counter";
-import Button from "./components/Button";
-import TodoList from "./components/TodoList";
-import RadioButton from "./components/RadioButton";
-import Checkbox from "./components/Checkbox";
+
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import Home from "./pages/HomePage";
+import NoPage from "./pages/NoPage";
+import Layout from "./pages/Layout";
+import About from "./pages/About";
 
 function App() {
-  const handleClick = () => {
-    alert("Button clicked!");
-  };
   return (
     <>
-      <Navbar />
-      <Carousel />
-      <div className="mx-5">
-        <Card />
-
-        <TodoList />
-        <hr />
-        <Checkbox />
-        <hr />
-        <RadioButton />
-        <hr />
-
-        <h2 className="py-4">Button</h2>
-        <Button
-          label="Primary Button"
-          onClick={handleClick}
-          variant="primary"
-        />
-        <Button
-          label="Secondary Button"
-          onClick={handleClick}
-          variant="secondary"
-          className="m-2"
-        />
-        <Button
-          label="Large Button"
-          onClick={handleClick}
-          variant="success"
-          size="lg"
-          className="m-2"
-        />
-        <Button
-          label="Small Button"
-          onClick={handleClick}
-          variant="danger"
-          size="sm"
-          className="m-2"
-        />
-        <Button
-          label="Disabled Button"
-          onClick={handleClick}
-          variant="warning"
-          disabled
-          className="m-2"
-        />
-        <hr />
-
-        <Counter />
-        <hr />
-
-        <Accordion />
-        <hr />
-        <ListGroup />
-        <hr />
-        {/* <Video /> */}
-
-        <Table />
-        <hr />
-        <Modal />
-      </div>
-      <Footer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="blogs" element={<Blogs />} />
+            <Route path="about" element={<About />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<NoPage />} />
+          </Route>
+        </Routes>
+      </BrowserRouter>
     </>
   );
 }

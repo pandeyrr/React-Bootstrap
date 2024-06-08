@@ -21,8 +21,7 @@ const TodoList = () => {
 
   return (
     <>
-      <h2 className=" py-4">TodoList</h2>
-
+      <h2 className=" py-4">Todo List</h2>
       <input
         className="form-control-lg me-2"
         type="text"
@@ -40,7 +39,7 @@ const TodoList = () => {
       </button>
       {/* remove all todos if more than one */}
       {todos.length > 1 && (
-        <button className="btn btn-danger btn-lg" onClick={removeAllTodos}>
+        <button className="btn btn-danger btn-lg mx-2" onClick={removeAllTodos}>
           Remove All Todos
         </button>
       )}
