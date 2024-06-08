@@ -10,7 +10,7 @@ const Table = () => {
     <>
       <h2 className="py-4">Table</h2>
       <div className="row">
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           <table className="table table-striped table-bordered">
             <thead>
               <tr>
@@ -32,7 +32,7 @@ const Table = () => {
             </tbody>
           </table>
         </div>
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           <table className="table table-striped table-bordered table-dark table-hover">
             <thead>
               <tr>

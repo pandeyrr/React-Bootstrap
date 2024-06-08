@@ -88,17 +88,12 @@ const HomePage = () => {
             <Modal />
           </div>
         </div>
+        <hr className="my-4" />
+        <Accordion />
+        <hr className="my-4" />
 
-        <div className="row">
-          <div className="col-12">
-            <Accordion />
-          </div>
-        </div>
-        <div className="row">
-          <div className="col">
-            <ListGroup />
-          </div>
-        </div>
+        <ListGroup />
+        <hr className="my-4" />
         <Table />
       </div>
     </>

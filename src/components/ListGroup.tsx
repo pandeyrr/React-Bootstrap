@@ -25,7 +25,7 @@ function ListGroup() {
     <>
       {/* Unordered List */}
       <div className="row">
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           <h2 className="py-4">List Group</h2>
           <ul className="list-group">
             {items.map((item, index) => (
@@ -46,7 +46,7 @@ function ListGroup() {
           </ul>
         </div>
         {/* Ordered List */}
-        <div className="col-6">
+        <div className="col-12 col-md-6">
           <h2 className="py-4">Numbered List Group</h2>
           <ol className="list-group list-group-numbered">
             {orderedListItems.map((item, index) => (
