@@ -49,7 +49,7 @@ function Navbar() {
                   Contact
                 </Link>
               </li>
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <a
                   className="nav-link dropdown-toggle"
                   href="#"
@@ -79,7 +79,7 @@ function Navbar() {
                     </a>
                   </li>
                 </ul>
-              </li>
+              </li> */}
             </ul>
 
             <form className="d-flex" role="search">
@@ -93,6 +93,14 @@ function Navbar() {
                 Search
               </button>
             </form>
+
+            <ul className="navbar-nav mb-2 mb-lg-0">
+              <li className="nav-item">
+                <Link to="/login" className="nav-link" aria-current="page">
+                  <i className="bi bi-person-fill fs-5"></i> Login
+                </Link>
+              </li>
+            </ul>
           </div>
         </div>
       </nav>
